@@ -87,7 +87,7 @@ export function RegisterModal({ show, handleClose }) {
                         Close
                     </Button>
                     {
-                        !err.email && err.password ? (<Button variant="primary" type='submit' onClick={handleSubmit} >
+                        !err.email && !err.password ? (<Button variant="primary" type='submit' onClick={handleSubmit} >
                             Save Changes
                         </Button>) : <Button disabled variant="primary" type='submit' onClick={handleSubmit} >
                             Save Changes
